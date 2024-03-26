@@ -1,0 +1,35 @@
+
+> ts_jest@1.0.0 test
+> jest
+
+  console.log
+    Setup
+
+      at Object.<anonymous> (src/test/Utils.test.ts:54:21)
+
+  console.log
+    Actual Test
+
+      at Object.<anonymous> (src/test/Utils.test.ts:68:21)
+
+  console.log
+    Teardown
+
+      at Object.<anonymous> (src/test/Utils.test.ts:59:21)
+
+  console.log
+    Setup
+
+      at Object.<anonymous> (src/test/Utils.test.ts:54:21)
+
+  console.log
+    Teardown
+
+      at Object.<anonymous> (src/test/Utils.test.ts:59:21)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |   66.66 |       50 |      80 |   66.66 |                   
+ Utils.ts |   66.66 |       50 |      80 |   66.66 | 23-28             
+----------|---------|----------|---------|---------|-------------------

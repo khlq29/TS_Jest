@@ -1,0 +1,46 @@
+npm init
+
+install dependencies -
+
+npm i -D typescript jest ts-jest ts-node @types/jest
+
+next -
+
+npx ts-jest config:init
+
+create file
+
+jest.config.ts
+in this file add
+
+import type { Config } from '@jest/types'
+
+const baseDir = '<rootDir>/src/app/server_app'
+const basetestDir = '<rootDir>/src/test/server_app'
+
+const config: Config.InitialOptions = {
+    preset: 'ts-jest',
+    testEnvironment: 'node',
+    verbose: true,
+    collectCoverage: true,
+    collectCoverageFrom: [
+        `${baseDir}/**/*.ts`
+    ],
+    testMatch: [
+        `${basetestDir}/**/*.ts`
+    ]
+}
+
+export default config;
+
+
+npm init
+package.json
+
+tsc -init
+tsconfig.json
+
+
+updating snapshots 
+
+npm run itest -- -u

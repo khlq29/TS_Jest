@@ -179,7 +179,7 @@ describe('Server app integration tests', ()=>{
     });
 
     it('snapshot demo', async ()=>{
-        jest.spyOn(generated, 'generateRandomId').mockReturnValueOnce('12345');    
+        jest.spyOn(generated, 'generateRandomId').mockReturnValueOnce('123456');    
         await fetch('http://localhost:8080/reservation', {
             method:HTTP_METHODS.POST,
             body: JSON.stringify(someReservation),
@@ -188,7 +188,7 @@ describe('Server app integration tests', ()=>{
             }
         });
 
-        const getResult = await fetch(`http://localhost:8080/reservation/12345`, {
+        const getResult = await fetch(`http://localhost:8080/reservation/123456`, {
             method:HTTP_METHODS.GET,
             headers: {
                 authorization: token
@@ -196,6 +196,8 @@ describe('Server app integration tests', ()=>{
         });
         const getRequestBody: Reservation = await getResult.json();
 
+        expect(getRequestBody).toMatchSnapshot();
+        expect(getRequestBody).toMatchSnapshot();
         expect(getRequestBody).toMatchSnapshot();
         expect(getRequestBody).toMatchSnapshot();
     })

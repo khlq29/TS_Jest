@@ -3,7 +3,7 @@
 exports[`Server app integration tests snapshot demo 1`] = `
 {
   "endDate": "someEndDate",
-  "id": "12345",
+  "id": "123456",
   "room": "someRoom",
   "startDate": "someStartDate",
   "user": "someUser",
@@ -13,7 +13,27 @@ exports[`Server app integration tests snapshot demo 1`] = `
 exports[`Server app integration tests snapshot demo 2`] = `
 {
   "endDate": "someEndDate",
-  "id": "12345",
+  "id": "123456",
+  "room": "someRoom",
+  "startDate": "someStartDate",
+  "user": "someUser",
+}
+`;
+
+exports[`Server app integration tests snapshot demo 3`] = `
+{
+  "endDate": "someEndDate",
+  "id": "123456",
+  "room": "someRoom",
+  "startDate": "someStartDate",
+  "user": "someUser",
+}
+`;
+
+exports[`Server app integration tests snapshot demo 4`] = `
+{
+  "endDate": "someEndDate",
+  "id": "123456",
   "room": "someRoom",
   "startDate": "someStartDate",
   "user": "someUser",

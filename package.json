@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/barosanuemailtest/TSTestCourse.git"
+    "url": "git+https://github.com/khlq29/TS_Jest.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/barosanuemailtest/TSTestCourse/issues"
+    "url": "https://github.com/khlq29/TS_Jest.git/issues"
   },
-  "homepage": "https://github.com/barosanuemailtest/TSTestCourse#readme",
+  "homepage": "https://github.com/khlq29/TS_Jest.git",
   "devDependencies": {
     "@types/jest": "^29.5.11",
     "@types/uuid": "^9.0.7",
